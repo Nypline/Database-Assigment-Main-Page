@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <nav class="h-[100vh] w-56 bg-black flex flex-col justify-start pt-7 gap-7 fixed z-10" id="sidenav">
+            <div class="rounded-full w-16 h-16 bg-white mb-2 m-2"></div>
+            <div class="flex items-center gap-5 ml-2 cursor-pointer" id="dashboard">
+                <img src="images/dashboard.png" alt="" class="w-6">
+                <h2 class="text-white text-md">Dashboard</h2>
+            </div>
+            <div class="flex items-center gap-5 ml-2 cursor-pointer" id="user">
+                <img src="images/data-user.png" alt="" class="w-6">
+                <h2 class="text-white text-lg">Data User</h2>
+            </div>
+            <div class="flex items-center gap-5 ml-2 cursor-pointer" id="pengumuman">
+                <img src="images/pengumuman.png" alt="" class="w-6">
+                <h2 class="text-white text-lg ">Pengumuman</h2>
+            </div>
+            <div class="flex items-center gap-5 ml-2 cursor-pointer" id="master-button">
+                <img src=" images/data-master.png" alt="" class="w-6">
+                <h2 class="text-white text-lg ">Data Master</h2>
+            </div>
+            <div class="hidden" id="master-menu">
+                <section class="h-60 w-[100%] bg-[#343A40] flex items-start pt-5 flex-col gap-7">
+                    <div class="flex items-center gap-5 ml-2 cursor-pointer" id="profile-sekolah">
+                        <img src="images/profile-sekolah.png" alt="" class="w-6">
+                        <h2 class="text-white text-lg ">Profil Sekolah</h2>
+                    </div>
+                    <div class="flex items-center gap-5 ml-2 cursor-pointer" id="data-tahun-pelajaran">
+                        <img src="images/data-th-pljrn.png" alt="" class="w-6">
+                        <h2 class="text-white text-lg ">Data Tahun Pelajaran</h2>
+                    </div>
+                    <div class="flex items-center gap-5 ml-2 cursor-pointer" id="data-ekstrakurikuler">
+                        <img src="images/data-ekstrakurikuler.png" alt="" class="w-6" id="data-ekstrakurikuler">
+                        <h2 class="text-white text-lg ">Data Ekstrakurikuler</h2>
+                    </div>
+                    <div class="flex items-center gap-5 ml-2 cursor-pointer" id="data-mata-pelajaran">
+                        <img src="images/data-mata-pelajaran.png" alt="" class="w-6">
+                        <h2 class="text-white text-lg ">Data Mata Pelajaran</h2>
+                    </div>
+                </section>
+            </div>
+            <a href="" class="flex items-center gap-5 ml-2">
+                <img src="images/logout.png" alt="" class="w-8">
+                <h2 class="text-red-500 text-xl">Keluar / Logout</h2>
+            </a>
+        </nav>
+        <nav class="w-[100%]  h-24 fixed bg-white flex pl-56" id="navbar">
+            <button id="hamburger-button"><img src="images/hamburger.png" alt="" class="w-8 h-4 ml-5"></button>
+        </nav>
+
+        <!-- Main Dashboard -->
+        <section class="w-[100%]  h-[100vh] bg-blue-300 " id="dashboard-main">
+            <h1 class="text-[100px] tex-black  text-center pt-16">DASHBOARD</h1>
+        </section>
+        <!-- User Main -->
+        <section class="w-[100%] h-[100vh] bg-blue-300 hidden" id="user-main">
+            <h1 class="text-[100px] tex-black  text-center pt-16"> DATAUSER</h1>
+        </section>
+        <!-- Pengumuman Main -->
+        <section class="w-[100%] h-[100vh] bg-blue-300 hidden" id="pengumuman-main">
+            <h1 class="text-[100px] tex-black  text-center pt-16">PENGUMUMAN</h1>
+        </section>
+        <!-- data sekolah -->
+        <section class="w-[100%] h-[100vh] bg-blue-300 hidden" id="profile-sekolah-main">
+            <h1 class="text-[100px] tex-black  text-center pt-16">PROFILE SEKOLAH</h1>
+        </section>
+        <!-- data tahun pelajaran -->
+        <section class="w-[100%] h-[100vh] bg-blue-300 hidden" id="tahun-pelajaran-main">
+            <h1 class="text-[100px] tex-black  text-center pt-16">DATA TAHUN PELAJARAN</h1>
+        </section>
+        <!-- data Ekstrakurikuler -->
+        <section class="w-[100%] h-[100vh] bg-blue-300 hidden" id="data-ekstrakurikuler-main">
+            <h1 class="text-[100px] text-black text-center pt-16"> DATA Ekstrakurikuler</h1>
+        </section>
+        <!-- Data mata Pelajaran -->
+        <section class="w-[100%] h-[100vh] bg-blue-300 hidden" id="data-mata-pelajaran-main">
+            <h1 class="text-[100px] tex-black  text-center pt-16">Data Mata Pelajaran</h1>
+        </section>
+    </main>
+    <script defer src="main.js"></script>
+</body>
+
+</html>
